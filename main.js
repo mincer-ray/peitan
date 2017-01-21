@@ -1,5 +1,8 @@
 const Render = require('./render');
+const Synth = require('./synth.js');
 
-const synthDisplay = new Render;
-
-synthDisplay.createButtons();
+document.addEventListener("DOMContentLoaded", function(event) {
+  window.mySynth = new Synth();
+  const synthDisplay = new Render;
+  synthDisplay.createButtons();
+});
