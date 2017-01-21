@@ -6,16 +6,16 @@ class Render {
     createjs.Ticker.on("tick", this.stage);
   }
 
-  createButtons(notes) {
+  createButtons() {
     let y = 0;
     let x = 0;
+    let notes = ['c', 'd', 'e', 'g', 'a'];
 
     for (let i = 0 ; i < 8 ; i++) {
       var graphics = new createjs.Graphics().beginFill("#000000").drawRect(0 + (x * 110), y, 100, 100);
       var button = new createjs.Shape(graphics);
+      button.name = (`${notes[i % 5]}2`);
 
-      this.assignCallbacks(button);
-      
       this.stage.addChild(button);
 
       x += 1;
@@ -24,10 +24,6 @@ class Render {
         x = 0;
       }
     }
-  }
-
-  assignCallbacks(button) {
-
   }
 }
 

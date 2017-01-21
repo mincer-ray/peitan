@@ -13,6 +13,9 @@ class Synth {
     //            "release" : 0
 	  //         }
     //   });
+
+    this.start = this.start.bind(this);
+    this.stop = this.stop.bind(this);
   }
 
   start(note) {

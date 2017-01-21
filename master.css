@@ -1,0 +1,17 @@
+ul {
+  list-style: none;
+  display: block;
+}
+
+li {
+  display: block;
+  width: 100px;
+  height: 100px;
+  border: 1px solid black;
+  float: left;
+  margin-left: 10px;
+}
+body {
+  display: flex;
+  flex-direction: column;
+}
