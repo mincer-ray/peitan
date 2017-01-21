@@ -1,7 +1,7 @@
 class Synth {
 
   constructor() {
-    this.synth = new Tone.PolySynth(8, Tone.DuoSynth).connect(Tone.Master);
+    this.synth = new Tone.PolySynth(10, Tone.DuoSynth).connect(Tone.Master);
     // this.synth.set({
 	  //    "filter" : {
 		//        "type" : "highpass"
